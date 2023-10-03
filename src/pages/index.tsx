@@ -1,4 +1,4 @@
-import { ConfigAccentColor } from '@/components/ConfigAccentColor';
+import { ConfigColors } from '@/components/ConfigColors';
 import { EducationItemsList } from '@/components/EducationItemsList';
 import { ExtraSkills } from '@/components/ExtraSkills';
 import { Languages } from '@/components/Languages';
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className='flex flex-wrap gap-10'>
       <div className='shrink-0'>
-        <div className='sticky top-0 h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 p-4 flex flex-col [&>*]:py-4 bg-white'>
+        <div className='sticky top-0 h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'>
           <ProfileHeader />
           <PersonalInfo />
           <Languages />
@@ -44,8 +44,8 @@ export default function Home() {
         <Footer />
       </div>
       <div className='basis-20 grow-0 shrink-0'>
-        <div className='sticky top-0 h-screen overflow-y-auto scrollbar bg-white p-4 flex flex-col items-center gap-4'>
-          <ConfigAccentColor />
+        <div className='sticky top-0 h-screen overflow-y-auto scrollbar bg-white dark:bg-gray-900 p-4 flex flex-col items-center gap-4'>
+          <ConfigColors />
           <h3 className='font-bold'>Links</h3>
           <SocialLinksList />
         </div>

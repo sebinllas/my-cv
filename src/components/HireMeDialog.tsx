@@ -25,7 +25,7 @@ export const HireMeDialog = ({
       open={open}
       onClose={onClose}
     >
-      <div className='bg-white relative p-10 flex flex-col items-center gap-16 aspect-video w-full'>
+      <div className='bg-white dark:bg-gray-900 dark:text-neutral-100 relative p-10 flex flex-col items-center gap-16 aspect-video w-full'>
         <h2 className='text-center text-6xl'>
           Thanks for your{' '}
           <span className='text-primary font-semibold'>interest </span>

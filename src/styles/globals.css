@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #FFB400;
-  --secondary-color: #7EB942;
+  --primary-color: #10B981;
 }
 
 body{
-  @apply text-neutral-800
+  @apply text-neutral-800 dark:text-neutral-100
 }
 
 .scrollbar::-webkit-scrollbar {

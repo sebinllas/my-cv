@@ -6,7 +6,7 @@ const quicksand = Quicksand({ subsets: ['latin-ext'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className={`${quicksand.className} bg-gray-200`}>
+    <div className={`${quicksand.className} bg-gray-200 dark:bg-gray-800`}>
       <Component {...pageProps} />
     </div>
   );

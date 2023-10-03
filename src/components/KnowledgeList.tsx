@@ -30,7 +30,7 @@ export const KnowledgeList = () => {
       />
       <IconCard
         title='Interactivity'
-        description='Interactive elements to improve user experience.'
+        description='Interactive elements in the web to improve user experience.'
         icon={<InteractiveWebIcon />}
       />
     </div>

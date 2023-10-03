@@ -24,10 +24,12 @@ export const ProjectModal = ({ open, onClose, project }: ProjectModalProps) => {
       open={open}
       onClose={onClose}
     >
-      <div className='bg-white p-10 flex flex-col gap-5 text-center'>
+      <div className='bg-white dark:bg-gray-900 p-10 flex flex-col gap-5 text-center'>
         <h2 className='text-primary text-xl font-bold'>{project.title}</h2>
-        <p className='text-neutral-500'>{project.description}</p>
-        <div className='flex gap-3 justify-center text-3xl'>
+        <p className='text-neutral-500 dark:text-neutral-300'>
+          {project.description}
+        </p>
+        <div className='flex gap-3 justify-center text-3xl dark:text-neutral-100'>
           {project.technologies.map((technology) => (
             <Tooltip key={technology.name} title={technology.name} arrow>
               <div>

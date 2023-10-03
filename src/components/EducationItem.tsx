@@ -23,7 +23,7 @@ export const EducationItem = ({
       </div>
       <div className='flex flex-col justify-center items-start gap-4 basis-3/5 grow-0 shrink'>
         <h2 className='font-semibold text-xl'>{name}</h2>
-        <div className='text-neutral-500'>
+        <div className='text-neutral-500 dark:text-neutral-300'>
           <p>{details}</p>
         </div>
       </div>

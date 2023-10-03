@@ -9,7 +9,7 @@ const formatter = new Intl.DateTimeFormat('en', {
 
 export const EducationItemsList = () => {
   return (
-    <div className='bg-white divide-neutral-200 divide-y p-10'>
+    <div className='bg-white dark:bg-gray-900 divide-neutral-200 dark:divide-gray-800 divide-y p-10'>
       {certifications.map((certification) => (
         <EducationItem
           key={certification.name}

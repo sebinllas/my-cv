@@ -19,11 +19,11 @@ export const ImageCard = ({
   onActionClick,
 }: ImageCardProps) => {
   return (
-    <div className={`bg-white ${className}`}>
+    <div className={`bg-white dark:bg-gray-900 ${className}`}>
       <Image src={image} alt={title} width={310} height={310} />
       <div className='p-6 flex flex-col gap-2 items-start'>
         <h3 className='font-bold text-lg'>{title}</h3>
-        <p className='text-neutral-500 line-clamp-3 text-ellipsis'>
+        <p className='text-neutral-500 dark:text-neutral-300 line-clamp-3 text-ellipsis'>
           {description}
         </p>
         {actionText != null ? (

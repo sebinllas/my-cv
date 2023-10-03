@@ -6,13 +6,13 @@ import { HireMeDialog } from './HireMeDialog';
 export const PresentationSection = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='px-14 pb-0 bg-white flex items-center gap-6'>
+    <div className='px-14 pb-0 bg-white dark:bg-gray-900 flex items-center gap-6'>
       <div className='flex flex-col gap-6 items-start '>
         <h1 className='text-4xl font-bold'>
           I&rsquo;m Sebastián Suárez{' '}
           <span className='text-primary'>Front-end</span> Developer
         </h1>
-        <p className='text-neutral-500'>
+        <p className='text-neutral-500 dark:text-neutral-300'>
           I am a software engineering student specialized in web development.
           Throughout my career as a student and working at my university as a
           programming assistant, I have gained experience developing personal,

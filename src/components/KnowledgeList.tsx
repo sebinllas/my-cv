@@ -19,6 +19,11 @@ export const KnowledgeList = () => {
         icon={<WebApiIcon />}
       />
       <IconCard
+        title='Interactivity'
+        description='Interactive elements in the web to improve user experience.'
+        icon={<InteractiveWebIcon />}
+      />
+      <IconCard
         title='Responsive Design'
         description='Websites adaptable to any screen sizes and devices.'
         icon={<DesktopPhoneIcon />}
@@ -27,11 +32,6 @@ export const KnowledgeList = () => {
         title='Web Standards and Best Practices'
         description='Up-to-date with web standards and best practices to ensure the best user experience.'
         icon={<WebAppIcon />}
-      />
-      <IconCard
-        title='Interactivity'
-        description='Interactive elements in the web to improve user experience.'
-        icon={<InteractiveWebIcon />}
       />
     </div>
   );

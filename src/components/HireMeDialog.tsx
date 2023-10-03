@@ -1,9 +1,5 @@
-import { Dialog } from '@mui/material';
-import React from 'react';
 import { TbBrandWhatsapp } from 'react-icons/tb';
-import { Quicksand } from 'next/font/google';
-
-const quicksand = Quicksand({ subsets: ['latin-ext'] });
+import { Modal } from './Modal';
 
 export const HireMeDialog = ({
   open,
@@ -13,18 +9,7 @@ export const HireMeDialog = ({
   onClose: () => void;
 }) => {
   return (
-    <Dialog
-      className={quicksand.className}
-      sx={{
-        '.MuiDialog-paper': {
-          backgroundColor: 'transparent',
-          overflow: 'visible',
-          font: 'inherit',
-        },
-      }}
-      open={open}
-      onClose={onClose}
-    >
+    <Modal open={open} onClose={onClose}>
       <div className='bg-white dark:bg-gray-900 dark:text-neutral-100 relative p-10 flex flex-col items-center gap-16 aspect-video w-full'>
         <h2 className='text-center text-6xl'>
           Thanks for your{' '}
@@ -47,6 +32,6 @@ export const HireMeDialog = ({
           <source src='confetti.mp4' type='video/mp4' />
         </video>
       </div>
-    </Dialog>
+    </Modal>
   );
 };

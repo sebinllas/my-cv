@@ -1,7 +1,7 @@
 import { type Project } from '@/types/Project';
-import { Dialog, Tooltip } from '@mui/material';
-import { Quicksand } from 'next/font/google';
 import { ModalImage } from './ModalImage';
+import { Modal } from './Modal';
+import { Tooltip } from '@mui/material';
 
 interface ProjectModalProps {
   open: boolean;
@@ -9,21 +9,9 @@ interface ProjectModalProps {
   project: Project;
 }
 
-const quicksand = Quicksand({ subsets: ['latin-ext'] });
-
 export const ProjectModal = ({ open, onClose, project }: ProjectModalProps) => {
   return (
-    <Dialog
-      className={quicksand.className}
-      sx={{
-        '.MuiDialog-paper': {
-          backgroundColor: 'transparent',
-          overflow: 'visible',
-        },
-      }}
-      open={open}
-      onClose={onClose}
-    >
+    <Modal open={open} onClose={onClose}>
       <div className='bg-white dark:bg-gray-900 p-10 flex flex-col gap-5 text-center'>
         <h2 className='text-primary text-xl font-bold'>{project.title}</h2>
         <p className='text-neutral-500 dark:text-neutral-300'>
@@ -64,6 +52,6 @@ export const ProjectModal = ({ open, onClose, project }: ProjectModalProps) => {
           ))}
         </div>
       </div>
-    </Dialog>
+    </Modal>
   );
 };

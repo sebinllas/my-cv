@@ -1,6 +1,6 @@
-import { Dialog } from '@mui/material';
 import Image, { type ImageProps } from 'next/image';
 import { useState } from 'react';
+import { Modal } from './Modal';
 
 export const ModalImage = ({
   src,
@@ -24,13 +24,7 @@ export const ModalImage = ({
         }}
         className='cursor-zoom-in'
       />
-      <Dialog
-        sx={{
-          '.MuiDialog-paper': {
-            backgroundColor: 'transparent',
-            overflow: 'visible',
-          },
-        }}
+      <Modal
         open={open}
         onClose={() => {
           setOpen(false);
@@ -56,7 +50,7 @@ export const ModalImage = ({
             }}
           />
         </div>
-      </Dialog>
+      </Modal>
     </div>
   );
 };

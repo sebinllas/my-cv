@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { ColorPicker } from '@/components/ColorPicker';
 import { IconCircle } from '@/components/IconCircle';
 import { TbPalette, TbSunMoon } from 'react-icons/tb';
-import { Dialog } from '@mui/material';
-import { Quicksand } from 'next/font/google';
-
-const quicksand = Quicksand({ subsets: ['latin-ext'] });
+import { Modal } from './Modal';
 
 export const ConfigColors = () => {
   const [open, setOpen] = useState(false);
@@ -18,18 +15,11 @@ export const ConfigColors = () => {
       >
         <IconCircle icon={TbPalette} />
       </button>
-      <Dialog
-        sx={{
-          '.MuiDialog-paper': {
-            backgroundColor: 'transparent',
-            overflow: 'visible',
-          },
-        }}
+      <Modal
         open={open}
         onClose={() => {
           setOpen(false);
         }}
-        className={quicksand.className}
       >
         <div className='flex flex-col justify-center items-center p-10 gap-5 bg-white dark:bg-gray-900 dark:text-neutral-100'>
           <h2 className='font-bold text-center'>
@@ -57,7 +47,7 @@ export const ConfigColors = () => {
             </span>
           </button>
         </div>
-      </Dialog>
+      </Modal>
     </div>
   );
 };

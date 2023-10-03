@@ -14,9 +14,12 @@ import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className='flex flex-wrap gap-10'>
+    <div className='flex gap-10'>
       <div className='shrink-0'>
-        <div className='sticky top-0 h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'>
+        <div
+          className='sticky top-0 h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 
+          dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'
+        >
           <ProfileHeader />
           <PersonalInfo />
           <Languages />

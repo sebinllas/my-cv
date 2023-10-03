@@ -10,3 +10,15 @@
 body{
   @apply text-neutral-800
 }
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-[6px] h-[6px]
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-transparent
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-transparent rounded-full hover:bg-neutral-500
+}

@@ -1,4 +1,4 @@
-import { IconCard } from '@/components/IconCard';
+import { IconCard } from '@/components/ui/IconCard';
 import { WebDevelopmentIcon } from '@/components/icons/WebDevelopmentIcon';
 import { WebApiIcon } from '@/components/icons/WebApiIcon';
 import { DesktopPhoneIcon } from '@/components/icons/DesktopPhoneIcon';

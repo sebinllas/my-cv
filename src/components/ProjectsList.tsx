@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ImageCard } from './ImageCard';
+import { ImageCard } from './ui/ImageCard';
 import {
   SiApollographql,
   SiGraphql,
@@ -13,7 +13,7 @@ import {
   SiVite,
 } from 'react-icons/si';
 import { TbBrandGithub, TbBrandVercel, TbWorldWww } from 'react-icons/tb';
-import { ProjectModal } from './ProjectModal';
+import { ProjectModal } from './ui/ProjectModal';
 import { type Project } from '@/types/Project';
 
 export const ProjectsList = () => {

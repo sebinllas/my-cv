@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { type IconLink as IconLinkType } from '@/types/IconLink';
-import { IconCircle } from '@/components/IconCircle';
+import { IconCircle } from '@/components/ui/IconCircle';
 
 type IconLinkProps = Exclude<IconLinkType, 'name'>;
 

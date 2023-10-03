@@ -1,6 +1,16 @@
 import React from 'react';
-import { ListDecoration } from './ListDecoration';
-import { extraSkills } from '@/data/extraSkills';
+import { ListDecoration } from './icons/ListDecoration';
+
+const extraSkills = [
+  'HTML5',
+  'CSS3',
+  'Tailwind CSS',
+  'Styled Components',
+  'Material UI',
+  'Git & GitHub',
+  'GraphQL',
+  'Figma',
+];
 
 export const ExtraSkills = () => {
   return (

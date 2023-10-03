@@ -6,7 +6,7 @@ import { PersonalInfo } from '@/components/PersonalInfo';
 import { PresentationSection } from '@/components/PresentationSection';
 import { ProfileHeader } from '@/components/ProfileHeader';
 import { ProgrammingLanguages } from '@/components/ProgrammingLanguages';
-import { Section } from '@/components/Section';
+import { Section } from '@/components/ui/Section';
 import { SocialLinksList } from '@/components/SocialLinksList';
 import { KnowledgeList } from '@/components/KnowledgeList';
 import { ProjectsList } from '@/components/ProjectsList';

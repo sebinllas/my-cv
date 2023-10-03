@@ -1,5 +1,5 @@
-import { CertificationDetails } from './CertificationDetails';
-import { EducationItem } from './EducationItem';
+import { CertificationDetails } from './ui/CertificationDetails';
+import { EducationItem } from './ui/EducationItem';
 import { type EducationItem as EducationItemType } from '@/types/EducationItem';
 
 const formatter = new Intl.DateTimeFormat('en', {

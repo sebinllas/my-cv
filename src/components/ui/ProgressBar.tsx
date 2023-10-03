@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Progress = ({ percentage }: { percentage: number }) => {
+export const ProgressBar = ({ percentage }: { percentage: number }) => {
   return (
     <div className='border border-primary rounded-full p-0.5'>
       <div

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ColorPicker } from '@/components/ColorPicker';
-import { IconCircle } from '@/components/IconCircle';
+import { IconCircle } from '@/components/ui/IconCircle';
 import { TbPalette, TbSunMoon } from 'react-icons/tb';
-import { Modal } from './Modal';
+import { Modal } from './ui/Modal';
 
 export const ConfigColors = () => {
   const [open, setOpen] = useState(false);

@@ -1,5 +1,5 @@
 import { TbBrandWhatsapp } from 'react-icons/tb';
-import { Modal } from './Modal';
+import { Modal } from './ui/Modal';
 
 export const HireMeDialog = ({
   open,

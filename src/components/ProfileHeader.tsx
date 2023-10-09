@@ -10,7 +10,7 @@ export const ProfileHeader = () => {
           width={380}
           height={380}
           alt={'Sebastián Suárez Ramírez'}
-          className='w-40 h-40 rounded-full mb-3 bg-gray-100'
+          className='sm:w-36 sm:h-36 w-40 h-40 rounded-full mb-3 bg-gray-100'
         />
         <span className='w-4 h-4 bg-emerald-500 absolute bottom-5 right-5 rounded-full' />
       </div>

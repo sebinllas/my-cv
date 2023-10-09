@@ -14,10 +14,10 @@ import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className='flex gap-10'>
-      <div className='shrink-0'>
+    <div className='grid grid-cols-6 lg:grid-cols-12 gap-x-12'>
+      <div className=' col-span-6 sm:col-span-2 lg:col-span-3'>
         <div
-          className='sticky top-0 h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 
+          className='sm:sticky top-0 sm:h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 
           dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'
         >
           <ProfileHeader />
@@ -27,7 +27,7 @@ export default function Home() {
           <ExtraSkills />
         </div>
       </div>
-      <div className='basis-3/5 grow flex flex-col gap-10'>
+      <div className='col-span-full sm:col-span-4 lg:col-span-9 xl:col-span-8 flex flex-col gap-12 mt-12 sm:mt-0'>
         <PresentationSection />
         <Section
           title='Education'
@@ -46,10 +46,13 @@ export default function Home() {
         />
         <Footer />
       </div>
-      <div className='basis-20 grow-0 shrink-0'>
-        <div className='sticky top-0 h-screen overflow-y-auto scrollbar bg-white dark:bg-gray-900 p-4 flex flex-col items-center gap-4'>
+      <div className='col-span-full xl:col-span-1 mt-12 xl:mt-0'>
+        <div
+          className='sticky top-0 xl:h-screen overflow-y-auto scrollbar bg-white 
+        dark:bg-gray-900 p-4 flex xl:flex-col items-center gap-4 justify-center xl:justify-start'
+        >
           <ConfigColors />
-          <h3 className='font-bold'>Links</h3>
+          <h3 className='font-bold hidden xl:block'>Links</h3>
           <SocialLinksList />
         </div>
       </div>

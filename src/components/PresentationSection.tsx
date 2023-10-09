@@ -6,7 +6,7 @@ import { HireMeDialog } from './HireMeDialog';
 export const PresentationSection = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='px-14 pb-0 bg-white dark:bg-gray-900 flex items-center gap-6'>
+    <div className='px-14 lg:py-0 bg-white dark:bg-gray-900 flex items-center gap-6 py-14'>
       <div className='flex flex-col gap-6 items-start '>
         <h1 className='text-4xl font-bold'>
           I&rsquo;m Sebastián Suárez{' '}
@@ -30,6 +30,7 @@ export const PresentationSection = () => {
         </button>
       </div>
       <Image
+        className='w-1/3 self-end hidden lg:block'
         src={'/images/presentation-image.png'}
         width={326}
         height={459}

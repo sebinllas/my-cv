@@ -14,8 +14,8 @@ import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className='grid grid-cols-6 lg:grid-cols-12 gap-x-12'>
-      <div className=' col-span-6 sm:col-span-2 lg:col-span-3'>
+    <div className='grid grid-cols-6 lg:grid-cols-12 gap-12 auto-rows-min'>
+      <div className=' col-span-6 sm:col-span-2 lg:col-span-3 row-span-full sm:row-end-3'>
         <div
           className='sm:sticky top-0 sm:h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 
           dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'
@@ -31,7 +31,8 @@ export default function Home() {
         <PresentationSection />
         <Section
           title='Education'
-          description='My education, the courses I have taken and the main achievements in my academic and skill-building journey.'
+          description='My education, the courses I have taken and the main achievements in my academic and 
+          skill-building journey.'
           content={<EducationItemsList />}
         />
         <Section
@@ -46,9 +47,12 @@ export default function Home() {
         />
         <Footer />
       </div>
-      <div className='col-span-full xl:col-span-1 mt-12 xl:mt-0'>
+      <div
+        className='col-span-full sm:col-start-3 sm:col-span-4 lg:col-span-9 lg:col-start-4 
+        xl:col-span-1 xl:row-start-1 xl:row-end-3 xl:col-end-13'
+      >
         <div
-          className='sticky top-0 xl:h-screen overflow-y-auto scrollbar bg-white 
+          className='xl:sticky top-0 xl:h-screen overflow-y-auto scrollbar bg-white 
         dark:bg-gray-900 p-4 flex xl:flex-col items-center gap-4 justify-center xl:justify-start'
         >
           <ConfigColors />

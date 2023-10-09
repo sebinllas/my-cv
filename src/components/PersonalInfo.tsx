@@ -2,7 +2,7 @@ import React from 'react';
 
 export const PersonalInfo = () => {
   return (
-    <ul>
+    <ul className='text-sm'>
       <li className='flex justify-between'>
         <span>Age:</span> <span>22</span>
       </li>

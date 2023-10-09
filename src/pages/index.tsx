@@ -18,7 +18,7 @@ export default function Home() {
       <div className=' col-span-6 sm:col-span-2 lg:col-span-3 row-span-full sm:row-end-3'>
         <div
           className='sm:sticky top-0 sm:h-screen overflow-y-auto scrollbar divide-y divide-neutral-200 
-          dark:divide-gray-800 p-4 flex flex-col [&>*]:py-4 bg-white dark:bg-gray-900'
+          dark:divide-gray-800 p-3 flex flex-col [&>*]:py-1 bg-white dark:bg-gray-900'
         >
           <ProfileHeader />
           <PersonalInfo />

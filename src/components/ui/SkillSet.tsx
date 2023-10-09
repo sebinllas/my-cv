@@ -10,9 +10,9 @@ interface SkillSetProps {
 export const SkillSet = ({ skills, title }: SkillSetProps) => {
   return (
     <div>
-      <h3 className='font-bold text-lg mb-3'>{title}</h3>
+      <h3 className='font-bold mb-1'>{title}</h3>
       {skills.map((skill) => (
-        <div className='mb-2' key={skill.name}>
+        <div className='mb-1' key={skill.name}>
           <Progress name={skill.name} percentage={skill.percentage} />
         </div>
       ))}

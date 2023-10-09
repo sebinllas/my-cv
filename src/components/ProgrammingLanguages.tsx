@@ -3,12 +3,8 @@ import React from 'react';
 
 const programmingLanguages = [
   {
-    name: 'JavaScript',
-    percentage: 90,
-  },
-  {
-    name: 'TypeScript',
-    percentage: 80,
+    name: 'JavaScript / TypeScript',
+    percentage: 85,
   },
   {
     name: 'Python',

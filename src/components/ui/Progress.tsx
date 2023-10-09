@@ -7,7 +7,7 @@ interface ProgressProps {
 
 export const Progress = ({ name, percentage }: ProgressProps) => (
   <>
-    <div className='flex justify-between'>
+    <div className='flex justify-between text-sm'>
       <span>{name}</span>
       <span>{percentage}%</span>
     </div>
